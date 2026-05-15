@@ -11,40 +11,6 @@ Real-time flight tracker built with **Next.js**, powered by AviationStack, OpenW
 
 ---
 
-## Quick Start
-
-### 1. Install dependencies
-
-```bash
-npm install
-```
-
-### 2. Set up API keys
-
-```bash
-cp .env.example .env.local
-```
-
-Fill in `.env.local`:
-
-| Variable | Where to get it |
-|---|---|
-| `AVIATIONSTACK_KEY` | [aviationstack.com](https://aviationstack.com/) — free tier: 500 req/month |
-| `OPENWEATHER_KEY` | [openweathermap.org](https://openweathermap.org/api) — free: 1000 calls/day |
-| `TWILIO_ACCOUNT_SID` | [console.twilio.com](https://console.twilio.com/) |
-| `TWILIO_AUTH_TOKEN` | Twilio Console |
-| `TWILIO_FROM_NUMBER` | Your Twilio phone number (e.g. `+12025551234`) |
-
-### 3. Run locally
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
----
-
 ## How to Use
 
 ### Airport Mode
@@ -106,11 +72,8 @@ Weather is fetched by airport IATA code as a city query. Some smaller airports m
 
 ---
 
-## Deploy to Vercel
 
-```bash
-npm install -g vercel
-vercel --prod
-```
 
-Add environment variables in the Vercel dashboard under **Settings → Environment Variables**.
+## Deployed Link
+
+https://skytrace47.vercel.app
