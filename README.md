@@ -59,16 +59,6 @@ skytrace/
 
 ---
 
-## API Notes
-
-### AviationStack Free Plan
-The free plan returns **non-real-time** data (15–60 min delay). For live data, upgrade to a paid plan. All API calls are routed through Next.js API routes to protect your key.
-
-### Twilio
-The `notify.js` route currently **sends the alert immediately** as a confirmation. For production, implement a scheduled job (cron, Vercel Cron, or a queue) to send alerts at the right time before departure.
-
-### OpenWeatherMap
-Weather is fetched by airport IATA code as a city query. Some smaller airports may not resolve — the UI gracefully hides weather when unavailable.
 
 ---
 
